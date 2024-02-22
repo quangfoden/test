@@ -1,10 +1,42 @@
-body,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper,
 .custom {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.custom marquee{
+
+.wrapper.none {
+    display: none;
+}
+
+.custom marquee {
     color: #000 !important;
+}
+
+.wrapper2 {
+    display: none;
+}
+
+body.show .wrapper2 {
+    display: block;
+}
+
+button {
+    transition: .2s;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+}
+
+button:hover {
+    background: #03A9F4 !important;
+    color: white !important;
+    cursor: pointer;
 }
