@@ -30,7 +30,7 @@ body.show .wrapper2 {
 }
 #btnNo{
     position: absolute;
-    top: 60vh;
+    top:120px;
 }
 button {
     transition: .2s;
