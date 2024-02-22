@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .wrapper,
@@ -27,12 +28,16 @@
 body.show .wrapper2 {
     display: block;
 }
-
+#btnNo{
+    position: absolute;
+}
 button {
+ 
     transition: .2s;
     padding: 10px 15px;
     border: none;
     border-radius: 20px;
+    z-index: 1000;
 }
 
 button:hover {

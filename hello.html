@@ -10,8 +10,8 @@
     <div class="wrapper">
         <div class="hoi" style="padding: 20px;width: 350px; text-align: center; color: aliceblue;">
             <h2>Đồng ý làm người yêu tớ nha !! </h4>
-                <div>
-                    <button class="khong">Không</button>
+                <div class="butnn">
+                    <button id="btnNo" onmouseover="noHover()" class="khong">Không</button>
                     <button class="dongy">Đồng ý</button>
                 </div>
         </div>
@@ -26,6 +26,16 @@
     </div>
     </div>
     <script>
+        function noHover() {
+            var minX = 100; // Giá trị tối thiểu cho X
+            var maxX = 500; // Giá trị tối đa cho X
+            var minY = 200; // Giá trị tối thiểu cho Y
+            var maxY = 400; // Giá trị tối đa cho Y
+            var x = Math.floor(Math.random() * (maxX - minX + 1)) + minX;
+            var y = Math.floor(Math.random() * (maxY - minY + 1)) + minY;
+            document.getElementById("btnNo").style.left = x + "px";
+            document.getElementById("btnNo").style.top = y + "px";
+        }
         const body = document.querySelector('body')
         const khong = document.querySelector('.khong')
         const wrapper = document.querySelector('.wrapper')
